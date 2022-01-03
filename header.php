@@ -33,16 +33,16 @@
 			<h2>Anticipe ta reconversion</h2>
 			<a class="btn btn-primary ar-btn-header" href="#" role="button">Nos partenaires</a>
 		</div>
-<!--
+
 		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php /* esc_html_e( 'Primary Menu', 'bapnewheroes' ); ?></button>
+			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php  esc_html_e( 'Primary Menu', 'bapnewheroes' ); ?></button>
 			<?php
 			wp_nav_menu(
 				array(
 					'theme_location' => 'menu-1',
 					'menu_id'        => 'primary-menu',
 				)
-			);*/
+			);
 			?>
-		</nav> #site-navigation --> 
+		</nav> <!-- #site-navigation --> 
 	</header><!-- #masthead -->

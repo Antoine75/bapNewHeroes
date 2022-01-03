@@ -53,6 +53,39 @@ body{
 
 @media screen and (max-width: 960px) {
 
+
+	/* Nav */
+
+	.menu-toggle{
+		display: none;
+		
+	}
+
+	.menu-menu-1-container{
+		background-color: #00163A;
+		padding: 5% 0;
+		position: fixed;
+		width: 100%;
+		bottom: 0;
+	}
+
+	.menu-menu-1-container ul{
+		
+		list-style: none;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		margin-bottom: 0;
+		padding-left: 0;
+	}
+
+	.menu-menu-1-container ul li a{
+		text-decoration: none;
+		color: white;
+	}
+
+/* Header */
+
 	.ar-header{
 		background-image: url(https://zupimages.net/up/22/01/51vd.jpg);
 		background-size: cover;
