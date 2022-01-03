@@ -12,19 +12,21 @@
 ?>
 
 	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'bapnewheroes' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'bapnewheroes' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'bapnewheroes' ), 'bapnewheroes', '<a href="http://underscores.me/">Underscores.me</a>' );
-				?>
-		</div><!-- .site-info -->
+		<div class="ar-footer-grid">
+		<form class="ar-form" >
+    		<label for="email">Abonnez-vous à la newletter </label>
+    		<input class="ar-email" type="email" name="email" id="email" required>
+			<input class="ar-submit" type="submit" value="Envoyer">
+		</form>
+		<div class="ar-follow">
+			<p>Suivez-nous</p>
+			<div class="ar-footer-img">
+				<i class="fab fa-instagram"></i>
+				<i class="fab fa-facebook-square"></i>
+				<i class="fab fa-linkedin"></i>
+			</div>
+		</div>
+		</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

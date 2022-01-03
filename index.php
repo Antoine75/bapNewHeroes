@@ -16,15 +16,15 @@ get_header();
 ?>
 
 	<main id="primary" class="site-main">
-		<div class="ar-card">
+		<div class="ar-list">
 			<h2>Nos services</h2>
-			<div>
+			<div class="ar-card ar-competences">
 				<p>Suivi de compétences</p>
 			</div>
-			<div>
+			<div class="ar-card ar-partenaires">
 				<p>partenaires</p>
 			</div>
-			<div>
+			<div class="ar-card ar-actus">
 				<p>actualités</p>
 			</div>
 		</div>
