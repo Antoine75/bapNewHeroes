@@ -80,4 +80,20 @@ body{
 		border: none;
 		margin-top: 20px;
 	}
+
+	.ar-card h2{
+		font-size: 500;
+		color: #00163A;
+	}
+
+	.ar-card{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.ar-card p {
+		color: #FFFFFF;
+	}
 }

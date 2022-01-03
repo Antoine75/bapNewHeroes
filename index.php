@@ -16,7 +16,19 @@ get_header();
 ?>
 
 	<main id="primary" class="site-main">
-		<p>test </p>
+		<div class="ar-card">
+			<h2>Nos services</h2>
+			<div>
+				<p>Suivi de compétences</p>
+			</div>
+			<div>
+				<p>partenaires</p>
+			</div>
+			<div>
+				<p>actualités</p>
+			</div>
+		</div>
+
 
 
 	</main><!-- #main -->
