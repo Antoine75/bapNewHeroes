@@ -13,19 +13,22 @@
 
 	<footer id="colophon" class="site-footer">
 		<div class="ar-footer-grid">
-		<form class="ar-form" >
-    		<label for="email">Abonnez-vous à la newletter </label>
-    		<input class="ar-email" type="email" name="email" id="email" required>
-			<input class="ar-submit" type="submit" value="Envoyer">
-		</form>
-		<div class="ar-follow">
-			<p>Suivez-nous</p>
-			<div class="ar-footer-img">
-				<i class="fab fa-instagram"></i>
-				<i class="fab fa-facebook-square"></i>
-				<i class="fab fa-linkedin"></i>
+			<form class="ar-form" >
+    			<label for="email">Abonnez-vous à la newletter </label>
+    			<input class="ar-email" type="email" name="email" id="email" required>
+				<input class="ar-submit" type="submit" value="Envoyer">
+			</form>
+			<div class="ar-follow">
+				<p>Suivez-nous</p>
+				<div class="ar-footer-img">
+					<i class="fab fa-instagram"></i>
+					<i class="fab fa-facebook-square"></i>
+					<i class="fab fa-linkedin"></i>
+				</div>
 			</div>
 		</div>
+		<div class="ar-footer-mention">
+		<p>© 2021 | New Heroes - Mentions légales</p>
 		</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
