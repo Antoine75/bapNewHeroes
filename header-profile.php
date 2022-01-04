@@ -28,7 +28,7 @@
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'bapnewheroes' ); ?></a>
 
 	<header id="masthead" class="site-header">
-		<div class="ar-header-profile">
+		<div class="ar-header ar-header-profile">
 			<img src="https://zupimages.net/up/22/01/fqap.png">
 			<div class="ar-user-image"></div>
 			<p>Pseudo</p>

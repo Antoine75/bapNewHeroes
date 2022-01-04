@@ -37,7 +37,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 
 body{
-	background-color: #BEEEE3;
+	background-color: #E1F9F4;
 	font-family: 'Poppins', sans-serif;
 
 }
@@ -63,6 +63,7 @@ body{
 		position: fixed;
 		width: 100%;
 		bottom: 0;
+		left: 0;
 	}
 
 	.menu-menu-1-container ul{
@@ -82,24 +83,30 @@ body{
 
 /* Header */
 
-	.ar-header{
+	.ar-header-index{
 		background-image: url(https://zupimages.net/up/22/01/51vd.jpg);
+	}
+
+	.ar-header{
 		background-size: cover;
 		height: 15rem;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		position: relative;
 	}
 
 	.ar-header img{
 		width: 60%;
+		z-index: 1;
 	}
 	.ar-header h2 {
 		margin-top: 5px;
 		font-size: 16px;
 		font-weight: 500;
 		color: white;
+		z-index: 1;
 	}
 	.ar-btn-header{
 		width: 40%;
@@ -108,19 +115,29 @@ body{
 		background-color: #FE480B;
 		border: none;
 		margin-top: 20px;
+		z-index: 1;
+	}
+
+	/* header partenaire */
+
+	.ar-header-partenaire{
+		background-image: url(https://zupimages.net/up/22/01/ha0d.png);
+
+	}
+
+	.ar-header-filter{
+		position: absolute;
+		height: 101%;
+		width: 101%;
+		background: rgb(0,22,58);
+		background: linear-gradient(rgba(0,22,58,1) 0%, rgba(0,1,52,0.39539565826330536) 55%, rgba(225,249,244,1) 100%);
 	}
 
 	/* header-profile */
 
 	.ar-header-profile{
 		background-image: url(https://zupimages.net/up/22/01/hjvf.jpg);
-		background-size: cover;
-		height: 15rem;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		position: relative;
+
 	}
 
 	.ar-header-profile img{
