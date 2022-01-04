@@ -114,4 +114,49 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 		color: #FE480B;
 		border: 4px solid #FE480B;
 	}
+
+	/* PROFIL PAGE STYLE*/
+
+	.profil-header-wrapper{
+		width: 100%;
+		height: 12rem;
+		background-image: url("./assets/img//background/img_basket.jpg");
+		background-repeat: none;
+		background-size: cover;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-evenly;
+		padding: 2px;
+	}
+
+	.profile-picture{
+		border: 2px solid #ffff;
+		border-radius: 100%;
+		background-image: url("./assets/img/profile/user.JPG");
+		background-repeat: none;
+		background-size: contain;
+		width: 128px;
+		height:128px;
+	}
+
+	.profil-item{
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: center;
+		width: 80%;
+		border: 2px solid #60D6BA;
+		border-radius: 12px;
+		margin: 16px auto;
+		padding: 4px;
+	}
+
+	.profil-name{
+		color: #ffff;
+	}
+
+	.profil-wrapper{
+		background-color: #E1F9F4;
+	}
 }

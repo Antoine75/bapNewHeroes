@@ -13,7 +13,5 @@ session_start();
  * @package bapnewheroes
  */
 get_header();
-get_template_part( 'template-parts/content', 'register' );
-echo do_shortcode("[ultimatemember form_id='5']");
-echo do_shortcode("[ultimatemember form_id='6']");
+get_template_part( 'template-parts/content', 'profil' );
 ?>
