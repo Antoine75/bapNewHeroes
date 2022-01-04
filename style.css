@@ -30,10 +30,15 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	padding: 0;
 }
 
-/*@font-face {
-	font-family: ‘FFNort-Black‘;
-	src: url(FFNort-Black.ttf) format("truetype");
-}*/
+@font-face {
+    font-family: 'FF Nort';
+    src: local('FF Nort Bold'), local('FF-Nort-Bold'),
+        url('FFNort-Bold.woff2') format('woff2'),
+        url('FFNort-Bold.woff') format('woff'),
+        url('FFNort-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
 
 
 body{
@@ -174,6 +179,7 @@ body{
 	/* Index */
 
 	.ar-list h2{
+		font-family: 'FF Nort';
 		font-weight: 500;
 		font-size: 20px;
 		padding-top: 20px;
@@ -234,6 +240,8 @@ body{
 	}
 
 	.ar-profile-section h2{
+		font-family: 'FF Nort';
+		color: #00163A;
 		font-size: 20px;
 		font-weight: 500;
 		padding: 5% 0;
@@ -249,6 +257,10 @@ body{
 	.ar-innerinfo{
 		position: relative;
 		padding: 10px;
+	}
+
+	.ar-innerinfo h3{
+		font-size: 18px;
 	}
 
 	.ar-innerinfo p{
@@ -319,6 +331,7 @@ body{
 	}
 
 	.ar-part-card div h3{
+		font-family: 'FF Nort';
 		font-size: 12px;
 		font-weight: 500;
 		margin-bottom: 0;

@@ -10,7 +10,7 @@ get_header( 'profile' );
 		<h2>Mes informations</h2>
 		<div class="ar-blockinfo ar-info-user">
 			<div class="ar-innerinfo">
-				<h2>Mes informations</h2>
+				<h3>Mes informations</h3>
 				<p>Nom :</p>
 				<p>Prenom :</p>
 				<p>Date de naissance :</p>
@@ -23,12 +23,12 @@ get_header( 'profile' );
 		</div>
 		<div class="ar-blockinfo ar-desc-user">
 			<div class="ar-innerinfo">
-				<h2>Description :</h2>
+				<h3>Description :</h3>
 			</div>
 		</div>
 		<div class="ar-blockinfo ar-blog-user">
 			<div class="ar-innerinfo">
-				<h2>Listes de mes blogs :</h2>
+				<h3>Listes de mes blogs :</h3>
 			</div>
 		</div>
 
