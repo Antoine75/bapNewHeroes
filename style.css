@@ -118,6 +118,12 @@ body{
 		z-index: 1;
 	}
 
+	/* header blogs */
+
+	.ar-header-blog{
+		background-image: url(https://zupimages.net/up/22/01/l7av.png);
+	}
+
 	/* header partenaire */
 
 	.ar-header-partenaire{

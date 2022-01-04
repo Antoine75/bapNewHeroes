@@ -37,7 +37,7 @@ get_header( 'partenaire' );
 			</div>
 			
 			<div class="ar-part-card ar-bg-green">
-				<img src="">
+				<img src="https://zupimages.net/up/22/01/n27z.png">
 				<div>
 					<h3>Nom du partenaire</h3>
 					<p>Courte description ...</p>
@@ -73,7 +73,7 @@ get_header( 'partenaire' );
 			</div>
 			
 			<div class="ar-part-card ar-bg-green">
-				<img src="">
+				<img src="https://zupimages.net/up/22/01/n27z.png">
 				<div>
 					<h3>Nom du partenaire</h3>
 					<p>Courte description ...</p>
