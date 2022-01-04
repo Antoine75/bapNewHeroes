@@ -128,10 +128,11 @@ body{
 	.ar-header-filter{
 		position: absolute;
 		height: 101%;
-		width: 101%;
+		width: 100%;
 		background: rgb(0,22,58);
 		background: linear-gradient(rgba(0,22,58,1) 0%, rgba(0,1,52,0.39539565826330536) 55%, rgba(225,249,244,1) 100%);
 	}
+
 
 	/* header-profile */
 
@@ -272,6 +273,110 @@ body{
 		justify-content: space-between;
 		align-items: flex-start;
 	}
+
+
+	/* ---------- Partenaire -----------*/
+
+	.ar-part-grid{
+		display: grid;
+		grid-template-columns: 10% 80% 10%;
+		grid-template-rows: auto;
+		width: 100%;
+		padding-bottom: 5%;
+		justify-items: center;
+	}
+
+	.ar-bg-grey{
+		width: 90%;
+		display: grid;
+		grid-template-columns: 20% 55% 25%;
+		grid-template-rows: 4rem;
+		position: relative;
+		border-radius: 10px;
+		margin-bottom: 1rem;
+	}
+
+	.ar-bg-green{
+		width: 90%;
+		display: grid;
+		grid-template-columns: 25% 55% 20%;
+		grid-template-rows: 4rem;
+		position: relative;
+		border-radius: 10px;
+		margin-bottom: 1rem;
+	}
+	
+	.ar-part-card div p {
+		margin-bottom: 0;
+		font-size: 10px;
+		font-weight: 300;
+	}
+
+	.ar-part-card div h3{
+		font-size: 12px;
+		font-weight: 500;
+		margin-bottom: 0;
+	}
+
+	.ar-part-card div{
+		padding: 5% 0% 0% 2%;
+		grid-column: 2 / 3;
+    	grid-row: 1 / 2;
+	}
+
+	.ar-part-card a{
+    	display: flex;
+    	font-weight: 400;
+    	align-items: center;
+    	height: 20%;
+    	justify-content: center;
+    	font-size: 8px;
+    	align-content: flex-end;
+		border-radius: 20px;
+		background-color: #FE480B;
+		color: white;
+		border: none;
+		
+	}
+
+	.ar-part-card img{
+		width: 110%;
+	}
+
+	.ar-bg-grey a {
+		position: absolute;
+    	bottom: 5%;
+    	right: 2%;
+	}
+
+	.ar-bg-green a {
+		position: absolute;
+    	bottom: 5%;
+    	left: 2%;
+	}
+
+	.ar-bg-green img {
+		grid-column: 3 / 4;
+	}
+
+	.ar-bg-green{
+		background: #ADECDD;
+		grid-column: 2 / -1;
+	}
+
+	.ar-bg-green h3 {
+		color: #60D6BA;
+	}
+	.ar-bg-green h3, .ar-bg-green p {
+		text-align: end;
+	}
+
+	.ar-bg-grey{
+		background: #9DB4BC;
+		grid-column: 1 / 3;
+		color: #00163A;
+	}
+
 	/* ---------- Footer -----------*/
 
 	footer{

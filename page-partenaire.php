@@ -7,31 +7,85 @@ get_header( 'partenaire' );
 ?>
 
 	<main id="primary" class="site-main ar-profile-section">
-		<h2>Mes informations</h2>
-		<div class="ar-blockinfo ar-info-user">
-			<div class="ar-innerinfo">
-				<h2>Mes informations</h2>
-				<p>Nom :</p>
-				<p>Prenom :</p>
-				<p>Date de naissance :</p>
-				<p>Email :</p>
-				<p>Mot de passe :</p>
-				<button type="button" class="btn btn-danger ar-deco ar-change">Changer</button>
-				<p>Sport :</p>
-				<button type="button" class="btn btn-danger ar-deco">Se déconnecter</button>
+		<h2>Nos partenaires</h2>
+		<div class="ar-part-grid">
+			<div class="ar-part-card ar-bg-grey">
+				<img src="https://zupimages.net/up/22/01/yeij.png">
+				<div>
+					<h3>Nom du partenaire</h3>
+					<p>Courte description ...</p>
+				</div>
+				<a class="btn btn-primary" href="#" role="button">En savoir plus</a>
 			</div>
-		</div>
-		<div class="ar-blockinfo ar-desc-user">
-			<div class="ar-innerinfo">
-				<h2>Description :</h2>
+
+			<div class="ar-part-card ar-bg-green">
+				<img src="https://zupimages.net/up/22/01/sf3x.png">
+				<div>
+					<h3>Nom du partenaire</h3>
+					<p>Courte description ...</p>
+				</div>
+				<a class="btn btn-primary" href="#" role="button">En savoir plus</a>
 			</div>
-		</div>
-		<div class="ar-blockinfo ar-blog-user">
-			<div class="ar-innerinfo">
-				<h2>Listes de mes blogs :</h2>
+			
+			<div class="ar-part-card ar-bg-grey">
+				<img src="https://zupimages.net/up/22/01/bo90.png">
+				<div>
+					<h3>Nom du partenaire</h3>
+					<p>Courte description ...</p>
+				</div>
+				<a class="btn btn-primary" href="#" role="button">En savoir plus</a>
 			</div>
+			
+			<div class="ar-part-card ar-bg-green">
+				<img src="">
+				<div>
+					<h3>Nom du partenaire</h3>
+					<p>Courte description ...</p>
+				</div>
+				<a class="btn btn-primary" href="#" role="button">En savoir plus</a>
+			</div>
+			
+			<div class="ar-part-card ar-bg-grey">
+				<img src="https://zupimages.net/up/22/01/yeij.png">
+				<div>
+					<h3>Nom du partenaire</h3>
+					<p>Courte description ...</p>
+				</div>
+				<a class="btn btn-primary" href="#" role="button">En savoir plus</a>
+			</div>
+			
+			<div class="ar-part-card ar-bg-green">
+				<img src="https://zupimages.net/up/22/01/sf3x.png">
+				<div>
+					<h3>Nom du partenaire</h3>
+					<p>Courte description ...</p>
+				</div>
+				<a class="btn btn-primary" href="#" role="button">En savoir plus</a>
+			</div>
+			
+			<div class="ar-part-card ar-bg-grey">
+				<img src="https://zupimages.net/up/22/01/bo90.png">
+				<div>
+					<h3>Nom du partenaire</h3>
+					<p>Courte description ...</p>
+				</div>
+				<a class="btn btn-primary" href="#" role="button">En savoir plus</a>
+			</div>
+			
+			<div class="ar-part-card ar-bg-green">
+				<img src="">
+				<div>
+					<h3>Nom du partenaire</h3>
+					<p>Courte description ...</p>
+				</div>
+				<a class="btn btn-primary" href="#" role="button">En savoir plus</a>
+			</div>
+			
 		</div>
+		
 
 	</main><!-- #main -->
 
 <?php
+
+get_footer();
