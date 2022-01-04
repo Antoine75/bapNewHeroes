@@ -51,13 +51,38 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 		padding: 0.5rem;
 	}
 
+	.register-wrapper{
+		background-color: #E1F9F4;
+		width: 100%;
+		height: 40rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	
+	.form-register-wrapper{
+		border: 2px solid #60D6BA;
+		border-radius: 16px;
+		width: 80%;
+		height: 32rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-evenly;
+		padding: 0.5rem;
+	}
+
+	.user-input-form{
+		width: 100%;
+	}
+
 	.form-control{
 		border: 1px solid #60D6BA;
 	}
 
 	.password-failsafe{
 		color: #60D6BA;
-		font-size: 1rem;
+		font-size: 12px;
 	}
 
 	.user-control{
@@ -76,6 +101,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 		display: flex;
 		justify-content: center;
 		margin: 0.5rem 0;
+		font-size: 12px;
 	}
 
 	.test{
