@@ -20,12 +20,15 @@ get_header();
 			<h2>Nos services</h2>
 			<div class="ar-card ar-competences">
 				<p>Suivi de compétences</p>
+				<a class="ar-link-card" href="#"></a>
 			</div>
 			<div class="ar-card ar-partenaires">
 				<p>partenaires</p>
+				<a class="ar-link-card" href="http://localhost/BAP-New-Heroes/wordpress/partenaires/"></a>
 			</div>
 			<div class="ar-card ar-actus">
 				<p>actualités</p>
+				<a class="ar-link-card" href="#"></a>
 			</div>
 		</div>
 
