@@ -40,9 +40,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
     font-weight: 700;
     font-style: normal;
   }
-	}
-	}
-    	.user-input-form{
+    .user-input-form{
 		width: 100%;
 	}
     .form-control{
@@ -97,7 +95,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 		justify-content: space-evenly;
 		padding: 2px;
 	}
-}
+
 body{
 	background-color: #E1F9F4;
 	font-family: 'Poppins', sans-serif;
@@ -669,4 +667,14 @@ body{
 		width: 100%;
 		height: 100%;
 	}
+}
+
+.link{
+	text-decoration: none;
+	color: #FE480B;
+}
+
+.link:active{
+	text-decoration: none;
+	color: black;
 }

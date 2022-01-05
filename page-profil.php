@@ -1,11 +1,8 @@
 <?php
-/**
- * Template part for displaying a message that posts cannot be found
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package bapnewheroes
+/*
+Template name: Profil
  */
+get_header();
 ?>
 
 <header class="profil-header-wrapper">
@@ -43,7 +40,7 @@
 
     <div class="profil-item">
     <h3 class="profil-item-title">Description</h3>
-        <p class="profil-description"> LOREM IPSUM</p>
+        <p class="profil-description"></p>
     </div>
 
     <div class="profil-item">

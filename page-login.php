@@ -1,14 +1,10 @@
 <?php
-/**
- * Template part for displaying a message that posts cannot be found
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package bapnewheroes
+customRedirector(is_user_logged_in(), 'http://new-heroes.local/profil/');
+/*
+Template name: Login
  */
-
+get_header();
 ?>
-
 <section class="login-wrapper">
     <div class="form-login-wrapper">
         <h2 class="connexion">Connexion</h2>
@@ -35,7 +31,18 @@
 
             <button type="button" class="btn btn-warning test" >Se connecter</button>
             <span class="warning-membership">Vous n'êtes pas membre ?</span>
-            <button type="button" class="btn btn-outline-warning border">Créer un compte</button>
+            <button type="button" class="btn btn-outline-warning border"><a href="http://new-heroes.local/Register/" class="link">Créer un compte</a></button>
         </div>
     </div>
 </section>
+
+<?php
+
+/*
+        if(is_user_logged_in())
+        {
+            var_dump($_COOKIE);
+        } else{
+            echo '<p>test</p>';
+        } 
+*/

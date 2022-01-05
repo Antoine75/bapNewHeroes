@@ -176,3 +176,10 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+function customRedirector($conditions, $url)
+{
+	if($conditions)
+	{
+		wp_safe_redirect($url);
+	}
+}
