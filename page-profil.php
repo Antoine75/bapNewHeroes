@@ -17,7 +17,6 @@ get_header();
         </svg>
     </div>
 
-
     <div class="profile-picture"></div>
 
     <span class="profil-name">PSEUDO</span>
@@ -35,7 +34,17 @@ get_header();
         <span class="profil-info-item">E-Mail : </span>
         <span class="profil-info-item">Mot de Passe : </span>
         <span class="profil-info-item">Sport : </span>
-        <button type="button" class="btn btn-outline-warning">Se déconnecter</button>
+        <form method="post" action="page-profile.php">
+            <button type="submit" class="btn btn-outline-warning" name="disconnect">Se Déconnecter</button>
+        </form>
+        <?php 
+            function formSubmit(){
+                if(isset($_POST['disconnect']))
+                {
+                    logOut();
+                }
+            }
+        ?>
     </div>
 
     <div class="profil-item">

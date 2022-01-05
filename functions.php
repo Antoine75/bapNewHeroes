@@ -183,3 +183,10 @@ function customRedirector($conditions, $url)
 		wp_safe_redirect($url);
 	}
 }
+
+function logOut(){
+	wp_destroy_current_session();
+    wp_logout();
+    wp_redirect(site_url()); 
+    exit();
+}
