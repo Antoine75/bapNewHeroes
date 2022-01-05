@@ -28,7 +28,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 *, ::before, ::after{
 	margin: 0;
 	padding: 0;
-	font-family: sans-serif;
 	font-size: 16px;
 }
 
