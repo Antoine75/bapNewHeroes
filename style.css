@@ -237,6 +237,11 @@ body{
 	.profil-item-title{
 		font-size: 18px;
 		font-weight: 400;
+		width: 100%;
+	}
+
+	.article-item{
+		width: 100%;
 	}
 	
 
@@ -269,9 +274,11 @@ body{
 		padding: 5%;
 	}
 
-	.profil-wrapper:last-child{
-		padding-bottom: 5rem;
+	.profil-item:last-child{
+		margin-bottom: 5rem;
+		align-items: flex-end;
 	}
+
 }
 
 @media screen and (max-width: 960px) {
@@ -454,6 +461,16 @@ body{
 		margin: 0.5rem 0;
 
 	}
+
+
+	/* Profil */
+
+	.ar-add-blog{
+		font-size: 20px;
+		padding: 0.175rem 0.75rem;
+
+	}
+
 
 	/*----------- Register -----------*/
 
