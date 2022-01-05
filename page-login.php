@@ -1,12 +1,9 @@
 <?php
-/**
- * Template part for displaying a message that posts cannot be found
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package bapnewheroes
- */
+/*
+Template name: Login
+*/
 
+ get_header( 'login' );
 ?>
 
 <section class="login-wrapper">
@@ -35,7 +32,7 @@
 
             <button type="button" class="btn btn-warning test" >Se connecter</button>
             <span class="warning-membership">Vous n'êtes pas membre ?</span>
-            <button type="button" class="btn btn-outline-warning border">Créer un compte</button>
+            <button type="button" class="btn btn-outline-warning border"><a href="http://localhost/merge-test/wordpress/inscription/" class="link">Créer un compte</a></button>
         </div>
     </div>
 </section>
