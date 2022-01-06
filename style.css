@@ -717,7 +717,7 @@ body{
 	}
 
 	.comments-area{
-		padding: 0 5% 15% 5%;
+		padding: 0 0 15% 5%;
 	}
 
 	.comments-area h3{
@@ -746,19 +746,25 @@ body{
 	.comment-body{
 		position: relative;
 		background-color: #BEEEE3;
-		border-radius: 10px;
+		border-radius: 10px 0px 0px 10px;
 		padding: 5%;
 		border: 2px solid #60D6BA;
+		border-right: none;
 		margin-bottom: 10%;
 		display: grid;
 		grid-template-columns: 30% 80%;
 		grid-template-rows: 80% 20%;
+		overflow: hidden;
 	}
 
 
 	.comment-content{
 		padding: 10px 0% 0% 5%;
 		
+	}
+
+	.comment-respond{
+		padding-right: 5%;
 	}
 
 	.comment-content p{
