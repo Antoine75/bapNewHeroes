@@ -31,6 +31,6 @@ get_header( 'profil' );
         <div class="article-item">
 
         </div>
-        <a class="btn btn-primary ar-add-blog" href="http://localhost/merge-test/wordpress/wp-admin/post-new.php" target="_blank" role="button">+</a>
+        <a class="btn btn-primary ar-add-blog" href="http://localhost/merge-test/wordpress/wp-admin/post-new.php" role="button">+</a>
     </div>
 </section>
