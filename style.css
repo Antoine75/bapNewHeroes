@@ -588,10 +588,97 @@ body{
 		color: #00163A;
 	}
 
-	/*----------- Blog -----------*/
+	/*----------- Article -----------*/
 
 	.entry-footer{
+		background: none;
+
+	}
+
+	.cat-links, .logged-in-as{
 		display: none;
+	}
+
+	.comments-area{
+		padding-bottom: 15%;
+	}
+
+
+
+	/*----------- Blog -----------*/
+
+	.ar-blog-list {
+		border: 2px solid #EFA07E;
+		border-radius: 10px;
+		display: grid;
+		grid-template-columns: 40% 60%;
+		grid-template-rows: 6.5rem;
+		padding: 1%;
+		margin: 5% 0;
+		position: relative;
+	}
+
+	.ar-blog-list .entry-header{
+		padding: 3%;
+
+	}
+
+	.ar-blog-list .wp-post-image{
+		width: 100%;
+		max-width: 148px;
+		height: auto;
+		border-radius: 10px;
+	}
+
+	.ar-blog-list .post-thumbnail{
+		display: flex;
+		align-items: center;
+	}
+
+	.ar-blog-list .entry-title{
+		font-family: 'FF Nort';
+		font-size: 16px;
+		margin-bottom: 0;
+		text-transform: capitalize;
+		
+
+	}
+
+	.ar-blog-list .entry-header img{
+		position: absolute;
+		bottom: 8%;
+    	right: 3%;
+	}
+
+	.ar-blog-list .entry-meta{
+		padding-bottom: 15%;
+	}
+
+	.entry-title a{
+		color: #FE480B;
+		text-decoration: none;
+	}
+
+	.ar-blog-list .posted-on, .posted-on a, .posted-on a time{
+		font-size: 12px;
+		font-weight: 300;
+		color: #FE480B;
+		text-decoration: none;
+	}
+
+
+
+	.ar-blog-list .ar-author p{
+		font-size: 12px;
+		font-weight: 300;
+		color: #FE480B;
+	}
+
+
+	.ar-link-article{
+		position: absolute;
+		width: 100%;
+		height: 100%;
 	}
 
 	/* ---------- Footer -----------*/

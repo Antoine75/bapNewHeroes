@@ -26,7 +26,7 @@ get_header( 'profil' );
         <p class="profil-description"> LOREM IPSUM</p>
     </div>
 
-    <div class="profil-item ar-blog-list">
+    <div class="profil-item">
         <h3 class="profil-item-title">Liste de mes Blogs</h3>
         <div class="article-item">
 
