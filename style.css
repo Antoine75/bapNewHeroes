@@ -588,6 +588,12 @@ body{
 		color: #00163A;
 	}
 
+	/*----------- Blog -----------*/
+
+	.entry-footer{
+		display: none;
+	}
+
 	/* ---------- Footer -----------*/
 
 	footer{
