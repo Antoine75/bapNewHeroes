@@ -9,9 +9,11 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class('ar-blog-list'); ?>>
-	<?php 
 
+<article id="post-<?php the_ID(); ?>" <?php post_class('ar-blog-list'); ?>>
+
+	<?php 
+	
 	if(has_post_thumbnail()) {
 		bapnewheroes_post_thumbnail();
 	} else {
@@ -38,12 +40,28 @@
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
 
-		<div class="ar-author">
+		<div class="ar-tag-blog">
+			<?php
+			$tags = get_field("etiquettes");
+			$i = 0;
+			if (isset($tags)){
+				while($i < count($tags)){
+
+					echo '<p>' . $tags[$i] . '</p>';
+					echo ' ';
+					$i += 1;
+				}
+			};
+			?>
+		</div>
+
+		
+		<img src="https://zupimages.net/up/22/01/xxea.png" alt="">
+	</header><!-- .entry-header -->
+	<div class="ar-author">
 			<p>Auteur :
 			<?php the_author(); ?>
 			</p>
-		</div>
-		<img src="https://zupimages.net/up/22/01/xxea.png" alt="">
-	</header><!-- .entry-header -->
+	</div>
 	<a class="ar-link-article" href="<?php echo esc_url( get_permalink() ) ?>"></a>
 </article><!-- #post-<?php the_ID(); ?> -->

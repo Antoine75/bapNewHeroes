@@ -595,7 +595,7 @@ body{
 		border-radius: 10px;
 		display: grid;
 		grid-template-columns: 40% 60%;
-		grid-template-rows: 6.5rem;
+		grid-template-rows: 80% 20%;
 		padding: 1%;
 		margin: 5%;
 		position: relative;
@@ -616,6 +616,8 @@ body{
 	.ar-blog-list .post-thumbnail{
 		display: flex;
 		align-items: center;
+		grid-row: 1 / 3;
+		grid-column: 1 / 2;
 	}
 
 	.ar-blog-list .entry-title{
@@ -633,10 +635,6 @@ body{
     	right: 3%;
 	}
 
-	.ar-blog-list .entry-meta{
-		padding-bottom: 15%;
-	}
-
 	.entry-title a{
 		color: #FE480B;
 		text-decoration: none;
@@ -649,12 +647,38 @@ body{
 		text-decoration: none;
 	}
 
+	.ar-blog-list .updated{
+		display: none;
+	}
+
+	.ar-tag-blog{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.ar-tag-blog p{
+		font-size: 12px;
+		margin-right: 2%;
+		padding: 2%;
+		background-color: #60D6BA;
+		border-radius: 10px;
+		color: white;
+		margin-bottom: 0.25rem;
+	}
 
 
 	.ar-blog-list .ar-author p{
 		font-size: 12px;
 		font-weight: 300;
 		color: #FE480B;
+		margin-bottom: 0;
+	}
+
+	.ar-blog-list .ar-author{
+		grid-column: 2 / 3;
+    	grid-row: 2 / 3;
+		padding-left: 3%;
 	}
 
 
@@ -728,6 +752,7 @@ body{
 	.comments-area textarea{
 		width: 100%;
 		height: 110px;
+		padding: 3%;
 		border-radius: 10px;
 		border: 2px solid #60D6BA;
 	}
@@ -813,6 +838,14 @@ body{
     	align-items: center;
 	}
 
+	.form-submit input{
+		width: 100%;
+		height: 3rem;
+		background-color:#BEEEE3 ;
+		border: 2px solid #60D6BA;
+		color: #60D6BA;
+		border-radius: 10px;
+	}
 
 	 
 

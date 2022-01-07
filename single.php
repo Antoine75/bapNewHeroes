@@ -13,6 +13,7 @@ get_header();
 	<main id="primary" class="site-main">
 
 		<?php
+		
 		while ( have_posts() ) :
 			the_post();
 
@@ -26,6 +27,14 @@ get_header();
 			else :
 				the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 			endif;
+
+			$tags = get_field("etiquettes");
+			$i = 0;
+			while($i < count($tags)){
+				
+				echo $tags[$i];
+				$i += 1;
+			}
 
 			if(has_post_thumbnail()) {
 				bapnewheroes_post_thumbnail();
@@ -68,6 +77,7 @@ get_header();
 			endif;
 
 		endwhile; // End of the loop.
+
 		?>
 
 	</main><!-- #main -->
