@@ -11,25 +11,21 @@ get_header();
     ?>
     <div class="profil-item">
     <?php
+    $user_id = get_current_user_id(); 
+	$user_info = get_userdata($user_id);
+
     ?>
         <h3 class="profil-item-title">Données Utilisateur</h3>
-        <span class="profil-info-item">Nom : <? $firstname ?></span>
-        <span class="profil-info-item">Pseudo : <? $username ?></span>
-        <span class="profil-info-item">Date de Naissance : <? $birth ?></span>
-        <span class="profil-info-item">E-Mail : <? $password ?></span>
-        <span class="profil-info-item">Mot de Passe : <? $sport ?></span>
-        <span class="profil-info-item">Sport : <? $description ?></span>
+        <span class="profil-info-item">Pseudo : <?php echo $user_info->user_nicename; ?></span>
+        <span class="profil-info-item">Rôle : <?php if($user_info->administrator == TRUE){ echo 'Administrateur'; } else{ echo 'Membre'; }; ?></span>
+        <span class="profil-info-item">E-Mail : <?php echo $user_info->user_email ?></span>
+        <span class="profil-info-item">Mot de Passe : ******* </span>
         <?php get_sidebar() ?>
 
     </div>
 
     <div class="profil-item">
-    <h3 class="profil-item-title">Description</h3>
-        <p class="profil-description"></p>
-    </div>
-
-    <div class="profil-item">
-    <h3 class="profil-item-title">Liste de mes Blogs</h3>
+    <h3 class="profil-item-title">Ecrire un nouvel Article</h3>
     <a class="btn btn-primary ar-add-blog" href="http://localhost/NewHeroes/wordpress/wp-admin/post-new.php" role="button">+</a>
     </div>
 </section>
