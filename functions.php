@@ -192,5 +192,6 @@ function logOut(){
 		$redirect_url = site_url();
 		wp_safe_redirect( $redirect_url );
 		exit;
-	} 
+	}
+	wp_logout_url( home_url() );
 } add_action( 'wp_logout', 'logOut' );

@@ -3,7 +3,6 @@
 Template name: Profil
  */
 global $wpdb;
-$profil = $wpdb->get_results("SELECT * FROM nh_users;");
 get_header();
 ?>
 <section class="profil-wrapper">
