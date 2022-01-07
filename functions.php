@@ -185,8 +185,12 @@ function customRedirector($conditions, $url)
 }
 
 function logOut(){
-	wp_destroy_current_session();
-    wp_logout();
-    wp_redirect("http://new-heroes.local/"); 
-    exit();
-}
+	$current_user   = wp_get_current_user();
+	$role_name      = $current_user->roles[0];
+
+	if ( 'subscriber' === $role_name ) {
+		$redirect_url = site_url();
+		wp_safe_redirect( $redirect_url );
+		exit;
+	} 
+} add_action( 'wp_logout', 'logOut' );
