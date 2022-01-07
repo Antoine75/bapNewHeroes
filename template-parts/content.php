@@ -41,16 +41,10 @@
 		<?php endif; ?>
 
 		<div class="ar-tag-blog">
-			<?php
+		<?php
 			$tags = get_field("etiquettes");
-			$i = 0;
-			if (isset($tags)){
-				while($i < count($tags)){
-
-					echo '<p>' . $tags[$i] . '</p>';
-					echo ' ';
-					$i += 1;
-				}
+			if(isset($tags)){
+				echo '<p class="' . $tags .'">' . $tags . '</p>';
 			};
 			?>
 		</div>

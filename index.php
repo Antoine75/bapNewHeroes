@@ -18,32 +18,18 @@ get_header( 'blog' );
 <main id="primary" class="site-main">
 	<h2 class="ar-title-section">Nos articles</h2>
 
-<form method="GET">
-	<?php
-
-	$terms = get_terms([
-		'taxonomy' => 'home-type',
-		'hide_empty' => false
-	]);
-
-	foreach ($terms as $term) :
-	?>
-
-	<label>
-	  	<input 
-	  		type="checkbox" 
-	  		name="home_type[]" 
-	  		value="<?php echo $term->slug; ?>"
-		>
-
-	  <?php echo $term->name; ?>
-	</label>
-
-	<?php endforeach; ?>
-	<button type="submit">Apply</button>
-</form>
-
-
+	<div>
+  		<input type="checkbox" id="sport" name="sport" class="ar-check ar-sport-check" onclick="filterFunction1()">
+  		<label for="sport">Sport</label>
+	</div>
+	<div>
+  		<input type="checkbox" id="temoignage" name="temoignage" class="ar-check ar-temoignage-check" onclick="filterFunction2()">
+  		<label for="temoignage">Témoignage</label>
+	</div>
+	<div>
+  		<input type="checkbox" id="conseil" name="conseil" class="ar-check ar-conseil-check" onclick="filterFunction3()">
+  		<label for="conseil">Conseil</label>
+	</div>
 	<?php if ( have_posts() ) : ?>
 
 		<header class="page-header">

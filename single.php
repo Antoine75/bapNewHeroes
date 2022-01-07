@@ -27,15 +27,16 @@ get_header();
 			else :
 				the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 			endif;
-
+			?>
+			<div class="ar-tag-blog ar-tag-article">
+			<?php
 			$tags = get_field("etiquettes");
-			$i = 0;
-			while($i < count($tags)){
-				
-				echo $tags[$i];
-				$i += 1;
-			}
-
+			if(isset($tags)){
+				echo '<p>' . $tags . '</p>';
+			};
+			?>
+			</div>
+			<?php
 			if(has_post_thumbnail()) {
 				bapnewheroes_post_thumbnail();
 			} else {
