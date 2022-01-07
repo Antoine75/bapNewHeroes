@@ -15,7 +15,7 @@ get_header();
 			</div>
 			<div class="ar-card ar-partenaires">
 				<p>partenaires</p>
-				<a class="ar-link-card" href="http://localhost/merge-test/wordpress/partenaires/"></a>
+				<a class="ar-link-card" href="http://localhost/NewHeroes/wordpress/partenaires/"></a>
 			</div>
 			<div class="ar-card ar-actus">
 				<p>actualités</p>

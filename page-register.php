@@ -6,7 +6,7 @@ Template name: Register
 get_header( 'login' );
 ?>
     <?php
-echo do_shortcode('[forminator_form id="38"]');
+echo do_shortcode('[forminator_form id="128"]');
 ?>
 <!-- <section class="register-wrapper">
     <div class="form-register-wrapper">

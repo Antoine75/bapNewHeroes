@@ -176,22 +176,13 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
-function customRedirector($conditions, $url)
-{
-	if($conditions)
-	{
-		wp_safe_redirect($url);
-	}
-}
+
 
 function logOut(){
-	$current_user   = wp_get_current_user();
-	$role_name      = $current_user->roles[0];
-
-	if ( 'subscriber' === $role_name ) {
-		$redirect_url = site_url();
-		wp_safe_redirect( $redirect_url );
-		exit;
-	}
-	wp_logout_url( home_url() );
-} add_action( 'wp_logout', 'logOut' );
+	$user_id = get_current_user_id();
+ 
+    wp_destroy_current_session();
+    wp_clear_auth_cookie();
+    wp_set_current_user( 0 );
+	header('Location: http://localhost/NewHeroes/wordpress/connexion');
+}

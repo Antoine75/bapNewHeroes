@@ -19,17 +19,8 @@ get_header();
         <span class="profil-info-item">E-Mail : <? $password ?></span>
         <span class="profil-info-item">Mot de Passe : <? $sport ?></span>
         <span class="profil-info-item">Sport : <? $description ?></span>
-        <form method="post" action="page-profile.php">
-            <button type="submit" class="btn btn-outline-warning" name="disconnect">Se Déconnecter</button>
-        </form>
-        <?php 
-            function formSubmit(){
-                if(isset($_POST['disconnect']))
-                {
-                    logOut();
-                }
-            }
-        ?>
+        <?php get_sidebar() ?>
+
     </div>
 
     <div class="profil-item">
@@ -39,6 +30,7 @@ get_header();
 
     <div class="profil-item">
     <h3 class="profil-item-title">Liste de mes Blogs</h3>
+    <a class="btn btn-primary ar-add-blog" href="http://localhost/NewHeroes/wordpress/wp-admin/post-new.php" role="button">+</a>
     </div>
 </section>
-        <a class="btn btn-primary ar-add-blog" href="http://localhost/merge-test/wordpress/wp-admin/post-new.php" role="button">+</a>
+        

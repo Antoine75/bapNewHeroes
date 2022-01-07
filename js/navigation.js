@@ -99,6 +99,10 @@
 }() );
 
 
+function redirect(){
+	window.location.href = "http://localhost/NewHeroes/wordpress/connexion/";
+}
+
 
 
 
