@@ -187,6 +187,6 @@ function customRedirector($conditions, $url)
 function logOut(){
 	wp_destroy_current_session();
     wp_logout();
-    wp_redirect(site_url()); 
+    wp_redirect("http://new-heroes.local/"); 
     exit();
 }

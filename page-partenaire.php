@@ -87,5 +87,7 @@ get_header( 'partenaire' );
 	</main><!-- #main -->
 
 <?php
+Forminator_API::initialize();
+echo do_shortcode('[forminator_form id="57"]');
 
 get_footer();

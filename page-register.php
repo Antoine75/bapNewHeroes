@@ -4,8 +4,10 @@ Template name: Register
  */
 get_header();
 ?>
-
-<section class="register-wrapper">
+    <?php
+echo do_shortcode('[forminator_form id="38"]');
+?>
+<!-- <section class="register-wrapper">
     <div class="form-register-wrapper">
         <h2 class="connexion">Créer un Compte</h2>
         <form class="user-input-form" method="post">
@@ -33,4 +35,4 @@ get_header();
             <button type="button" class="btn btn-outline-warning border" id="account">Créer un compte</button>
         </div>
     </div>
-</section>
+</section> -->

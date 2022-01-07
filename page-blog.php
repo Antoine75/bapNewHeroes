@@ -8,8 +8,7 @@ get_header( 'blog' );
 
 	<main id="primary" class="site-main ar-profile-section">
 		<h2>Nos articles</h2>
-
+		<?php
+		?>
 
 	</main><!-- #main -->
-
-<?php

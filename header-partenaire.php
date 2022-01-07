@@ -8,7 +8,7 @@
  *
  * @package bapnewheroes
  */
-
+global $wpdb;
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
