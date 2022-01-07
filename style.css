@@ -471,6 +471,14 @@ body{
 
 	}
 
+	.wp-block-loginout a{
+		color: #FE480B;
+		border: 2px solid #FE480B;
+		border-radius: 10px;
+		padding: 2% 10%;
+		text-decoration: none;
+	}
+
 
 	/*----------- Register -----------*/
 
