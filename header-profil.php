@@ -28,13 +28,14 @@
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'bapnewheroes' ); ?></a>
 
 	<header id="masthead" class="site-header">
-		<div class="ar-header ar-header-blog">
-			<img src="https://zupimages.net/up/22/01/9u0t.png">
-			<h2>Anticipe ta reconversion</h2>
-			<a class="btn btn-primary ar-btn-header" href="http://localhost/NewHeroes/wordpress/partenaires/" role="button">Nos partenaires</a>
+		<div class="ar-header ar-header-profil">
+        	<img src="https://zupimages.net/up/22/01/fqap.png">
+    	
+    		<div class="profile-picture"></div>
+
+    		<span class="profil-name">PSEUDO</span>
 			<div class="ar-header-filter"></div>
 		</div>
-
 		<nav id="site-navigation" class="main-navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php  esc_html_e( 'Primary Menu', 'bapnewheroes' ); ?></button>
 			<?php

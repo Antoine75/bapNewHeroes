@@ -176,3 +176,13 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+
+
+function logOut(){
+	$user_id = get_current_user_id();
+ 
+    wp_destroy_current_session();
+    wp_clear_auth_cookie();
+    wp_set_current_user( 0 );
+	header('Location: http://localhost/NewHeroes/wordpress/connexion');
+}

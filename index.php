@@ -12,29 +12,58 @@
  * @package bapnewheroes
  */
 
-get_header();
+get_header( 'blog' );
 ?>
 
-	<main id="primary" class="site-main">
-		<div class="ar-list">
-			<h2>Nos services</h2>
-			<div class="ar-card ar-competences">
-				<p>Suivi de compétences</p>
-				<a class="ar-link-card" href="#"></a>
-			</div>
-			<div class="ar-card ar-partenaires">
-				<p>partenaires</p>
-				<a class="ar-link-card" href="http://localhost/BAP-New-Heroes/wordpress/partenaires/"></a>
-			</div>
-			<div class="ar-card ar-actus">
-				<p>actualités</p>
-				<a class="ar-link-card" href="#"></a>
-			</div>
-		</div>
+<main id="primary" class="site-main">
+	<h2 class="ar-title-section">Nos articles</h2>
 
+	<div>
+  		<input type="checkbox" id="sport" name="sport" class="ar-check ar-sport-check" onclick="filterFunction1()">
+  		<label for="sport">Sport</label>
+	</div>
+	<div>
+  		<input type="checkbox" id="temoignage" name="temoignage" class="ar-check ar-temoignage-check" onclick="filterFunction2()">
+  		<label for="temoignage">Témoignage</label>
+	</div>
+	<div>
+  		<input type="checkbox" id="conseil" name="conseil" class="ar-check ar-conseil-check" onclick="filterFunction3()">
+  		<label for="conseil">Conseil</label>
+	</div>
+	<?php if ( have_posts() ) : ?>
 
+		<header class="page-header">
+			<?php
 
-	</main><!-- #main -->
+			the_archive_description( '<div class="archive-description">', '</div>' );
+			?>
+		</header><!-- .page-header -->
+
+	<?php
+	/* Start the Loop */
+	while ( have_posts() ) :
+		the_post();
+
+		/*
+		 * Include the Post-Type-specific template for the content.
+		 * If you want to override this in a child theme, then include a file
+		 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
+		 */
+		get_template_part( 'template-parts/content', get_post_type() );
+
+	endwhile;
+
+	the_posts_navigation();
+
+	else :
+
+	get_template_part( 'template-parts/content', 'none' );
+
+	endif;
+	?>
+
+</main><!-- #main -->
+
 
 <?php
 get_footer();

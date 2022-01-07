@@ -28,9 +28,10 @@
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'bapnewheroes' ); ?></a>
 
 	<header id="masthead" class="site-header">
-		<div class="ar-header ar-header-partenaire">
+		<div class="ar-header ar-header-login">
+			<img src="https://zupimages.net/up/22/01/n9c5.png">
+			<h2>Anticipe ta reconversion</h2>
 			<div class="ar-header-filter"></div>
-				<img src="https://zupimages.net/up/22/01/e8gl.png" alt="">
 		</div>
 
 		<nav id="site-navigation" class="main-navigation">

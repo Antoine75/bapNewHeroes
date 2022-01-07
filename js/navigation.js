@@ -97,3 +97,84 @@
 		}
 	}
 }() );
+
+
+function redirect(){
+	window.location.href = "http://localhost/NewHeroes/wordpress/connexion/";
+}
+
+
+
+
+function filterFunction1(){
+	var spo = document.querySelectorAll('.Sport'), i;
+
+	for (i = 0; i < spo.length; ++i) {
+		var div = spo[i].closest('.ar-blog-list');
+		div.classList.toggle("display_block");
+	  }
+
+	var tem = document.querySelectorAll('.Témoignage'), t;
+
+	for (t = 0; t < tem.length; ++t) {
+	  var section = tem[t].closest('.ar-blog-list');
+	  section.classList.toggle("display_none");
+	}
+
+	var con = document.querySelectorAll('.Conseil'), c;
+
+	for (c = 0; c < con.length; ++c) {
+		var lab = con[c].closest('.ar-blog-list');
+		lab.classList.toggle("display_none");
+	  }
+
+}
+
+function filterFunction2(){
+	var spo = document.querySelectorAll('.Sport'), i;
+
+	for (i = 0; i < spo.length; ++i) {
+		var div = spo[i].closest('.ar-blog-list');
+		div.classList.toggle("display_none");
+	  }
+
+	var tem = document.querySelectorAll('.Témoignage'), t;
+
+	for (t = 0; t < tem.length; ++t) {
+	  var section = tem[t].closest('.ar-blog-list');
+	  section.classList.toggle("display_block");
+	}
+
+	var con = document.querySelectorAll('.Conseil'), c;
+
+	for (c = 0; c < con.length; ++c) {
+		var lab = con[c].closest('.ar-blog-list');
+		lab.classList.toggle("display_none");
+	  }
+		
+
+}
+
+function filterFunction3(){
+	var spo = document.querySelectorAll('.Sport'), i;
+
+	for (i = 0; i < spo.length; ++i) {
+		var div = spo[i].closest('.ar-blog-list');
+		div.classList.toggle("display_none");
+	  }
+
+	var tem = document.querySelectorAll('.Témoignage'), t;
+
+	for (t = 0; t < tem.length; ++t) {
+	  var section = tem[t].closest('.ar-blog-list');
+	  section.classList.toggle("display_none");
+	}
+
+	var con = document.querySelectorAll('.Conseil'), c;
+
+	for (c = 0; c < con.length; ++c) {
+		var lab = con[c].closest('.ar-blog-list');
+		lab.classList.toggle("display_block");
+	  }
+}
+

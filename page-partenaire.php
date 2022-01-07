@@ -6,8 +6,8 @@ Template name: Partenaire
 get_header( 'partenaire' );
 ?>
 
-	<main id="primary" class="site-main ar-profile-section">
-		<h2>Nos partenaires</h2>
+	<main id="primary" class="site-main">
+		<h2 class="ar-title-section">Nos partenaires</h2>
 		<div class="ar-part-grid">
 			<div class="ar-part-card ar-bg-grey">
 				<img src="https://zupimages.net/up/22/01/yeij.png">
@@ -87,5 +87,7 @@ get_header( 'partenaire' );
 	</main><!-- #main -->
 
 <?php
+Forminator_API::initialize();
+echo do_shortcode('[forminator_form id="57"]');
 
 get_footer();

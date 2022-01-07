@@ -8,7 +8,6 @@
  *
  * @package bapnewheroes
  */
-
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
@@ -31,7 +30,7 @@
 		<div class="ar-header ar-header-index">
 			<img src="https://zupimages.net/up/22/01/386o.png">
 			<h2>Anticipe ta reconversion</h2>
-			<a class="btn btn-primary ar-btn-header" href="http://localhost/BAP-New-Heroes/wordpress/partenaires/" role="button">Nos partenaires</a>
+			<a class="btn btn-primary ar-btn-header" href="http://localhost/NewHeroes/wordpress/partenaires/" role="button">Nos partenaires</a>
 			<div class="ar-header-filter"></div>
 		</div>
 
