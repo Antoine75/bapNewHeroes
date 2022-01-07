@@ -9,7 +9,20 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
+<article id="post-<?php the_ID(); ?>" <?php post_class('ar-blog-list'); ?>>
+
+	<?php 
+	
+	if(has_post_thumbnail()) {
+		bapnewheroes_post_thumbnail();
+	} else {
+		echo '
+		<a class="post-thumbnail" href="' . esc_url( get_permalink() ) . '" aria-hidden="true" tabindex="-1">
+		<img src="https://zupimages.net/up/22/01/mt4s.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" loading="lazy">
+		</a>
+		';
+	}; ?> 
 	<header class="entry-header">
 		<?php
 		if ( is_singular() ) :
@@ -18,46 +31,31 @@
 			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 		endif;
 
-		if ( 'post' === get_post_type() ) :
+		if ( 'post' === get_post_type()) :
 			?>
 			<div class="entry-meta">
 				<?php
 				bapnewheroes_posted_on();
-				bapnewheroes_posted_by();
 				?>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
-	</header><!-- .entry-header -->
 
-	<?php bapnewheroes_post_thumbnail(); ?>
-
-	<div class="entry-content">
+		<div class="ar-tag-blog">
 		<?php
-		the_content(
-			sprintf(
-				wp_kses(
-					/* translators: %s: Name of current post. Only visible to screen readers */
-					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'bapnewheroes' ),
-					array(
-						'span' => array(
-							'class' => array(),
-						),
-					)
-				),
-				wp_kses_post( get_the_title() )
-			)
-		);
+			$tags = get_field("etiquettes");
+			if(isset($tags)){
+				echo '<p class="' . $tags .'">' . $tags . '</p>';
+			};
+			?>
+		</div>
 
-		wp_link_pages(
-			array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'bapnewheroes' ),
-				'after'  => '</div>',
-			)
-		);
-		?>
-	</div><!-- .entry-content -->
-
-	<footer class="entry-footer">
-		<?php bapnewheroes_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
+		
+		<img src="https://zupimages.net/up/22/01/xxea.png" alt="">
+	</header><!-- .entry-header -->
+	<div class="ar-author">
+			<p>Auteur :
+			<?php the_author(); ?>
+			</p>
+	</div>
+	<a class="ar-link-article" href="<?php echo esc_url( get_permalink() ) ?>"></a>
 </article><!-- #post-<?php the_ID(); ?> -->

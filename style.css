@@ -28,7 +28,13 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 *, ::before, ::after{
 	margin: 0;
 	padding: 0;
+
 	font-size: 16px;
+}
+
+body{
+	background-color: #E1F9F4;
+	font-family: 'Poppins', sans-serif;
 }
 
 @font-face {
@@ -40,13 +46,14 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
     font-weight: 700;
     font-style: normal;
   }
+
     .user-input-form{
 		width: 100%;
 	}
     .form-control{
 		border: 1px solid #60D6BA;
 	}
-    	.password-failsafe{
+    .password-failsafe{
 		color: #60D6BA;
 		font-size: 12px;
 	}
@@ -96,19 +103,12 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 		padding: 2px;
 	}
 
-body{
-	background-color: #E1F9F4;
-	font-family: 'Poppins', sans-serif;
-
-
-}
-
 .ar-btn_test{
 	display: block;
 }
 
 
-@media screen and (max-width: 428px){
+@media screen and (max-width: 960px){
 	.login-wrapper{
 		background-color: #E1F9F4;
 		width: 100%;
@@ -122,7 +122,7 @@ body{
 	.form-login-wrapper{
 		border: 2px solid #60D6BA;
 		border-radius: 16px;
-		width: 80%;
+		width: 100%;
 		height: 32rem;
 		display: flex;
 		flex-direction: column;
@@ -134,6 +134,7 @@ body{
 	.register-wrapper{
 		background-color: #E1F9F4;
 		width: 100%;
+		padding: 5%;
 		height: 40rem;
 		display: flex;
 		align-items: center;
@@ -143,7 +144,7 @@ body{
 	.form-register-wrapper{
 		border: 2px solid #60D6BA;
 		border-radius: 16px;
-		width: 80%;
+		width: 100%;
 		height: 32rem;
 		display: flex;
 		flex-direction: column;
@@ -220,17 +221,49 @@ body{
 		height:128px;
 	}
 
+	.profil-text, .ar-title-section{
+		display: flex;
+		justify-content: center;
+		font-size: 20px;
+		font-family: 'FF Nort';
+
+	}
+
+	.ar-title-section{
+		padding: 1rem 0;
+	}
+	
+
+	.profil-item-title{
+		font-size: 18px;
+		font-weight: 400;
+		width: 100%;
+	}
+
+	.article-item{
+		width: 100%;
+	}
+	
+
+	.profil-info-item, .profil-description{
+		padding-bottom: 1rem;
+		font-size: 16px;
+		font-weight: 300;
+	}
+
 	.profil-item{
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
 		justify-content: center;
-		width: 80%;
+		width: 100%;
 		border: 2px solid #60D6BA;
 		border-radius: 12px;
 		margin: 16px auto;
 		padding: 4px;
 	}
+
+	
 
 	.profil-name{
 		color: #ffff;
@@ -238,7 +271,14 @@ body{
 
 	.profil-wrapper{
 		background-color: #E1F9F4;
+		padding: 5%;
 	}
+
+	.profil-item:last-child{
+		margin-bottom: 5rem;
+		align-items: flex-end;
+	}
+
 }
 
 @media screen and (max-width: 960px) {
@@ -278,7 +318,7 @@ body{
 
 /* Header */
 
-	.ar-header-index{
+	.ar-header-index, .ar-header-login{
 		background-image: url(https://zupimages.net/up/22/01/51vd.jpg);
 	}
 
@@ -296,6 +336,7 @@ body{
 		width: 60%;
 		z-index: 1;
 	}
+
 	.ar-header h2 {
 		margin-top: 5px;
 		font-size: 16px;
@@ -319,6 +360,39 @@ body{
 		background-image: url(https://zupimages.net/up/22/01/l7av.png);
 	}
 
+	/* header profil */
+
+	.ar-header-profil{
+		background-image: url(https://zupimages.net/up/22/01/zq74.jpg);
+		position: relative;
+	}
+
+	.ar-header-profil img{
+		width: 10%;
+		position: absolute;
+		top: 2%;
+		left: 10%;
+	}
+
+	.profile-picture{
+		margin-bottom: 1rem;
+	}
+
+	.profile-picture, .ar-header-profil img, .ar-header-profil span{
+		z-index: 1;
+	}
+
+	/* header Login */
+
+	.ar-header-login{
+		display: flex;
+		justify-content: center;
+	}
+
+	.ar-header-login img{
+		width: 30%;
+	}
+
 	/* header partenaire */
 
 	.ar-header-partenaire{
@@ -332,38 +406,6 @@ body{
 		width: 100%;
 		background: rgb(0,22,58);
 		background: linear-gradient(rgba(0,22,58,1) 0%, rgba(0,1,52,0.39539565826330536) 55%, rgba(225,249,244,1) 100%);
-	}
-
-
-	/* header-profile */
-
-	.ar-header-profile{
-		background-image: url(https://zupimages.net/up/22/01/hjvf.jpg);
-
-	}
-
-	.ar-header-profile img{
-		width: 10%;
-		position: absolute;
-		top: 0%;
-		left: 5%;
-	}
-
-	.ar-header-profile p{
-		color: white;
-		font-size: 16px;
-		font-weight: 400;
-		margin: 1rem 0 -1rem 0;
-	}
-
-	.ar-user-image{
-		width: 40%;
-		aspect-ratio: 1;
-    	border-radius: 50%;
-		background-color: white;
-		background-image: url(https://zupimages.net/up/22/01/tlzg.png);
-		background-size: cover;
-		border: 2px white solid;
 	}
 
 	/* Index */
@@ -420,66 +462,26 @@ body{
 
 	}
 
-	/* profile */
 
-	.ar-profile-section{
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		flex-direction: column;
-	}
+	/* Profil */
 
-	.ar-profile-section h2{
-		font-family: 'FF Nort';
-		color: #00163A;
+	.ar-add-blog{
 		font-size: 20px;
-		font-weight: 500;
-		padding: 5% 0;
+		padding: 0.175rem 0.75rem;
+
 	}
 
-	.ar-blockinfo{
-		width: 90%;
-		border-radius: 10px;
-		border: 1px #60D6BA solid;
-		margin: 2.5% 0%;
-	}
 
-	.ar-innerinfo{
-		position: relative;
-		padding: 10px;
-	}
+	/*----------- Register -----------*/
 
-	.ar-innerinfo h3{
-		font-size: 18px;
-	}
-
-	.ar-innerinfo p{
-		margin-bottom: 0.5rem;
-	}
-
-	.ar-blog-user{
-		margin: 2.5% 0 20% 0;
-	}
-
-	.ar-change{
-		position: absolute;
-		right: 2%;
-    	bottom: 26.5%;
-	}
-
-	.ar-deco{
+	.link{
+		text-decoration: none;
 		color: #FE480B;
-		border: 1px #FE480B solid;
-		background: none;
-		font-size: 11px;
-		font-weight: 400;
 	}
-
-	.ar-password{
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		align-items: flex-start;
+	
+	.link:active{
+		text-decoration: none;
+		color: black;
 	}
 
 
@@ -585,6 +587,295 @@ body{
 		grid-column: 1 / 3;
 		color: #00163A;
 	}
+
+	/*----------- Blog -----------*/
+
+	.ar-blog-list {
+		border: 2px solid #EFA07E;
+		border-radius: 10px;
+		display: grid;
+		grid-template-columns: 40% 60%;
+		grid-template-rows: 80% 20%;
+		padding: 1%;
+		margin: 5%;
+		position: relative;
+	}
+
+	.ar-blog-list .entry-header{
+		padding: 3%;
+
+	}
+
+	.ar-blog-list .wp-post-image{
+		width: 100%;
+		max-width: 148px;
+		height: auto;
+		border-radius: 10px;
+	}
+
+	.ar-blog-list .post-thumbnail{
+		display: flex;
+		align-items: center;
+		grid-row: 1 / 3;
+		grid-column: 1 / 2;
+	}
+
+	.ar-blog-list .entry-title{
+		font-family: 'FF Nort';
+		font-size: 16px;
+		margin-bottom: 0;
+		text-transform: capitalize;
+		
+
+	}
+
+	.ar-blog-list .entry-header img{
+		position: absolute;
+		bottom: 8%;
+    	right: 3%;
+	}
+
+	.entry-title a{
+		color: #FE480B;
+		text-decoration: none;
+	}
+
+	.ar-blog-list .posted-on, .posted-on a, .posted-on a time{
+		font-size: 12px;
+		font-weight: 300;
+		color: #FE480B;
+		text-decoration: none;
+	}
+
+	.ar-blog-list .updated{
+		display: none;
+	}
+
+	/* Tag */
+
+	.ar-tag-blog{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.ar-tag-blog p{
+		font-size: 12px;
+		margin-right: 2%;
+		padding: 2%;
+		background-color: #60D6BA;
+		border-radius: 10px;
+		color: white;
+		margin-bottom: 0.25rem;
+	}
+
+	.ar-tag-article{
+		padding: 0 2%;
+	}
+
+
+	/* JS Filter */
+
+	.display_none{
+		display: none;
+	}
+
+	.display_block{
+		display: grid !important;
+	}
+
+
+	.ar-blog-list .ar-author p{
+		font-size: 12px;
+		font-weight: 300;
+		color: #FE480B;
+		margin-bottom: 0;
+	}
+
+	.ar-blog-list .ar-author{
+		grid-column: 2 / 3;
+    	grid-row: 2 / 3;
+		padding-left: 3%;
+	}
+
+
+	.ar-link-article{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+	}
+
+	/* Article Single */
+
+	.ar-article-single h1{
+		display: flex;
+		justify-content: center;
+		padding-top: 20px;
+	}
+
+	.ar-article-single .size-post-thumbnail{
+		width: 100%;
+		padding: 0 0 20px 0;
+	}
+
+	.ar-article-single .entry-content{
+		padding: 0 20px;
+		font-size: 16px;
+		font-weight: 300;
+		
+	}
+
+	.ar-article-single .entry-content p {
+		overflow: hidden;
+	}
+
+	.ar-article-single .entry-footer {
+		padding: 0 20px 40px 20px;
+		display: flex;
+		justify-content: flex-end;
+		
+
+	}
+
+	.ar-article-single .entry-footer a{
+		font-size: 16px;
+		color: white;
+		border-radius: 10px;
+		background-color: #FE480B;
+		padding: 5px 10px;
+		text-decoration: none;
+	}
+
+
+	/* Textarea */
+
+	.entry-footer{
+		background: none;
+
+	}
+
+	.cat-links, .logged-in-as, .comments-area label, .comments-title, .comment-metadata a, .says{
+		display: none;
+	}
+
+	.comments-area{
+		padding: 0 0 15% 5%;
+	}
+
+	.comments-area h3{
+		font-family: 'FF Nort';
+		font-size: 18px;
+	}
+
+	.comments-area textarea{
+		width: 100%;
+		height: 110px;
+		padding: 3%;
+		border-radius: 10px;
+		border: 2px solid #60D6BA;
+	}
+
+	 /* Comments */
+
+	ol{
+		list-style: none;
+	}
+	.comment-meta{
+		background: none;
+		grid-row: 1 / 3;
+		grid-column: 1 / 2;
+	}
+
+	.comment-body{
+		position: relative;
+		background-color: #BEEEE3;
+		border-radius: 10px 0px 0px 10px;
+		padding: 5%;
+		border: 2px solid #60D6BA;
+		border-right: none;
+		margin-bottom: 10%;
+		display: grid;
+		grid-template-columns: 30% 80%;
+		grid-template-rows: 80% 20%;
+		overflow: hidden;
+	}
+
+
+	.comment-content{
+		padding: 10px 0% 0% 5%;
+		
+	}
+
+	.comment-respond{
+		padding-right: 5%;
+	}
+
+	.comment-content p{
+		font-weight: 300;
+		font-size: 12px;
+		width: 90%;
+		text-align: end;
+	}
+
+	.reply{
+		grid-row: 2 / 3;
+		grid-column: 2 / 3;
+		text-align: end;
+		padding-right: 10%;
+	}
+
+	.reply a{
+		color:#FE480B;
+		font-size: 10px;
+		font-weight: 300;
+		text-decoration: none;
+	}
+
+	.comment-author img{
+		border-radius: 50%;
+		height: auto;
+    	width: 100%;
+	}
+
+	.fn{
+		position: absolute;
+		top: 0%;
+		right: 3%;
+	}
+
+	.url, .fn{
+		font-size: 12px;
+		text-decoration: none;
+		color: #00163A;
+	}
+
+	.comment-reply-title small a{
+		color: #FE480B;
+		margin-left: 13%;
+		font-size: 14px;
+	}
+
+	.comment-reply-title a{
+		color: #00163A;
+		text-decoration: none;
+	}
+
+	.comment-author{
+		display: flex;
+    	flex-direction: column;
+    	align-items: center;
+	}
+
+	.form-submit input{
+		width: 100%;
+		height: 3rem;
+		background-color:#BEEEE3 ;
+		border: 2px solid #60D6BA;
+		color: white;
+		border-radius: 10px;
+	}
+
+	 
 
 	/* ---------- Footer -----------*/
 

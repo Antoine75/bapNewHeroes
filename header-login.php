@@ -8,6 +8,7 @@
  *
  * @package bapnewheroes
  */
+
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
@@ -27,10 +28,9 @@
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'bapnewheroes' ); ?></a>
 
 	<header id="masthead" class="site-header">
-		<div class="ar-header ar-header-index">
-			<img src="https://zupimages.net/up/22/01/386o.png">
+		<div class="ar-header ar-header-login">
+			<img src="https://zupimages.net/up/22/01/n9c5.png">
 			<h2>Anticipe ta reconversion</h2>
-			<a class="btn btn-primary ar-btn-header" href="http://localhost/merge-test/wordpress/partenaires/" role="button">Nos partenaires</a>
 			<div class="ar-header-filter"></div>
 		</div>
 

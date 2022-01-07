@@ -1,8 +1,9 @@
 <?php
 /*
 Template name: Register
- */
-get_header();
+*/
+
+get_header( 'login' );
 ?>
     <?php
 echo do_shortcode('[forminator_form id="38"]');

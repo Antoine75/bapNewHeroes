@@ -41,3 +41,4 @@ get_header();
     <h3 class="profil-item-title">Liste de mes Blogs</h3>
     </div>
 </section>
+        <a class="btn btn-primary ar-add-blog" href="http://localhost/merge-test/wordpress/wp-admin/post-new.php" role="button">+</a>
