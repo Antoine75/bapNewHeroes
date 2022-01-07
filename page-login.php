@@ -19,7 +19,7 @@ if (is_user_logged_in() == TRUE){
 
 get_sidebar();
 ?>
-<div class="ar-inscription">
+<div class="ar-inscription ar-insc-connex">
     <p>Vous n'êtes pas membre ?</p>
     <a class="ar-creer-compte" href="http://localhost/NewHeroes/wordpress/inscriptions/">Créer un compte</a>
 </div>

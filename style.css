@@ -480,6 +480,14 @@ body{
 		font-family: 'FF Nort';
 	}
 
+	.ar-h1-inscription{
+		margin-top: 10%;
+		width: 100%;
+		text-align: center;
+		font-size: 20px;
+		font-family: 'FF Nort';
+	}
+
 	.ar-conn .login-remember{
 		display: flex;
     	align-items: center;
@@ -490,12 +498,19 @@ body{
 		font-size: 16px;
 	}
 
-	.ar-conn .login-submit input{
+	.ar-conn .login-submit input, .forminator-button{
 		color: white;
 		background: #FE480B;
 		border: 2px solid #FE480B;
 		border-radius: 10px;
 		text-decoration: none;
+	}
+
+	.ar-conn .login-username input, .ar-conn .login-password input{
+		border-radius: 8px;
+		border: 2px solid #60D6BA;
+		padding: 2% 3%;
+
 	}
 
 	.ar-creer-compte{
@@ -506,7 +521,7 @@ body{
 		color: #FE480B;
 		background: none;
 		border: 2px solid #FE480B;
-		border-radius: 10px;
+		border-radius: 7px;
 		text-decoration: none;
 		font-size: 14px;
 	}
@@ -514,6 +529,10 @@ body{
 		display: flex;
 		align-items: center;
 		flex-direction: column;
+		
+	}
+
+	.ar-insc-connex{
 		border-top: 2px solid #60D6BA;
     	padding-top: 5%;
 	}
@@ -528,6 +547,38 @@ body{
 		display: flex;
 		justify-content: center;
 		flex-direction: column;
+	}
+
+	/* Inscritpion */
+
+	.ar-insc .forminator-row, .ar-insc .forminator-field {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+	}
+
+	.forminator-button{
+		margin: 5% 0;
+	}
+
+	.forminator-row{
+		margin: 5% 0;
+	}
+
+
+	.forminator-row label{
+		display: none;
+	}
+
+	.forminator-row input{
+		border-radius: 8px;
+		padding: 2% 3%;
+		border: 2px solid #60D6BA;
+
+	}
+
+	.forminator-screen-reader-only{
+		display: none;
 	}
 
 
