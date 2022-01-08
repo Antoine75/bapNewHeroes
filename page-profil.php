@@ -2,8 +2,7 @@
 /*
 Template name: Profil
  */
-global $wpdb;
-get_header();
+get_header( 'profil' );
 ?>
 <section class="profil-wrapper">
     <h2 class="profil-text">Mes Informations</h2>
@@ -20,6 +19,7 @@ get_header();
         <span class="profil-info-item">Rôle : <?php if($user_info->administrator == TRUE){ echo 'Administrateur'; } else{ echo 'Membre'; }; ?></span>
         <span class="profil-info-item">E-Mail : <?php echo $user_info->user_email ?></span>
         <span class="profil-info-item">Mot de Passe : ******* </span>
+        <a class="btn btn-primary ar-edit-profil" href="http://localhost/NewHeroes/wordpress/wp-admin/profile.php" role="button">Edit</a>
         <?php get_sidebar() ?>
 
     </div>

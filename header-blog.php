@@ -29,7 +29,7 @@
 
 	<header id="masthead" class="site-header">
 		<div class="ar-header ar-header-blog">
-			<img src="https://zupimages.net/up/22/01/9u0t.png">
+			<img class="ar-header-img-index" src="https://zupimages.net/up/22/01/9u0t.png">
 			<h2>Anticipe ta reconversion</h2>
 			<a class="btn btn-primary ar-btn-header" href="http://localhost/NewHeroes/wordpress/partenaires/" role="button">Nos partenaires</a>
 			<div class="ar-header-filter"></div>

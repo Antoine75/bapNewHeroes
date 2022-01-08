@@ -212,13 +212,14 @@ body{
 	}
 
 	.profile-picture{
-		border: 2px solid #ffff;
-		border-radius: 100%;
-		background-image: url("./assets/img/profile/user.JPG");
+		border: 2px solid white;
+		border-radius: 50%;
 		background-repeat: none;
 		background-size: contain;
-		width: 128px;
-		height:128px;
+		width: 40%;
+		aspect-ratio: 1;
+		overflow: hidden;
+		display: flex;
 	}
 
 	.profil-text, .ar-title-section{
@@ -261,12 +262,14 @@ body{
 		border-radius: 12px;
 		margin: 16px auto;
 		padding: 4px;
+		position: relative;
 	}
 
 	
 
 	.profil-name{
-		color: #ffff;
+		color: white;
+		font-size: 16px;
 	}
 
 	.profil-wrapper{
@@ -277,6 +280,13 @@ body{
 	.profil-item:last-child{
 		margin-bottom: 5rem;
 		align-items: flex-end;
+	}
+
+	.ar-edit-profil{
+		position: absolute;
+		bottom: 2%;
+		right: 2%;
+		font-size: 16px;
 	}
 
 }
@@ -332,7 +342,7 @@ body{
 		position: relative;
 	}
 
-	.ar-header img{
+	.ar-header-img-index{
 		width: 60%;
 		z-index: 1;
 	}
@@ -360,18 +370,42 @@ body{
 		background-image: url(https://zupimages.net/up/22/01/l7av.png);
 	}
 
-	/* header profil */
 
-	.ar-header-profil{
-		background-image: url(https://zupimages.net/up/22/01/zq74.jpg);
-		position: relative;
+	/* header artilcle */
+	.ar-header-article{
+		height: 11rem !important;
+	 	background-image: url(https://zupimages.net/up/22/01/e3ms.png); 
 	}
 
-	.ar-header-profil img{
+	.ar-article-header-img {
+		width: 10%;
+		z-index: 1;
+		position: absolute;
+		top: 5%;
+		right: 5%;
+	}
+
+	.ar-header-article form img{
+		z-index: 1;
+		position: absolute;
+		top: 12%;
+		left: 8%;
+	}
+
+	/* header profil */
+
+	.ar-header-img{
+		width: 60%;
+		z-index: 1;
 		width: 10%;
 		position: absolute;
 		top: 2%;
 		left: 10%;
+	}
+
+	.ar-header-profil{
+		background-image: url(https://zupimages.net/up/22/01/zq74.jpg);
+		position: relative;
 	}
 
 	.profile-picture{
@@ -932,6 +966,10 @@ body{
 		justify-content: flex-end;
 		
 
+	}
+
+	.wp-block-image img{
+		height: auto;
 	}
 
 	.ar-article-single .entry-footer a{

@@ -7,7 +7,7 @@
  * @package bapnewheroes
  */
 
-get_header();
+get_header( 'article' );
 ?>
 
 	<main id="primary" class="site-main">
