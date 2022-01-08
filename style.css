@@ -717,6 +717,10 @@ body{
 
 	/*----------- Blog -----------*/
 
+	.ar-blog-section{
+		position: relative;
+	}
+
 	.ar-blog-list {
 		border: 2px solid #EFA07E;
 		border-radius: 10px;
@@ -796,12 +800,76 @@ body{
 		margin-bottom: 0.25rem;
 	}
 
+	
+
 	.ar-tag-article{
 		padding: 0 2%;
 	}
 
 
 	/* JS Filter */
+
+	.ar-filter-img img{
+		width: 9%;
+	}
+
+	.ar-filter-img, .ar-filter-section{
+		margin: 3% 5%;
+	}
+
+	.ar-filter-section{
+		display: none;
+		width: 90%;
+		background: #BEEEE3;
+		border: 2px solid #60D6BA;
+		border-radius: 10px;
+		grid-template-columns: 50% 50%;
+		grid-template-rows: 5rem 5rem;
+		grid-auto-rows: auto;
+		padding: 5%;
+		z-index: 5;
+		position: relative;
+
+	}
+
+	.remove-reglage{
+		width: 100%;
+		height: 100%;
+		z-index: 4;
+		background-color: #090a0b28;
+	}
+
+	.ar-filter-section button, .ar-filter-section div {
+		display: flex;
+    	align-items: center;
+	}
+
+	.ar-filter-section h2{
+		position: absolute;
+		top: 2%;
+		left: 2%;
+		font-size: 16px;
+    	font-family: 'FF Nort';
+	}
+
+	.ar-filter-section div input{
+		margin-right: 5%;
+	}
+
+	.ar-filter-section button{
+		justify-content: center;
+		margin: 13% 0;
+		grid-column: 2 / 3;
+		padding: 2%;
+		background-color: #60D6BA;
+		border-radius: 10px;
+		color: white;
+		border: none;
+	}
+
+
+
+	
 
 	.display_none{
 		display: none;
@@ -811,6 +879,8 @@ body{
 		display: grid !important;
 	}
 
+
+	/* --- */
 
 	.ar-blog-list .ar-author p{
 		font-size: 12px;
@@ -1057,12 +1127,18 @@ body{
 	}
 
 	.ar-footer-img{
-		width: 50%;
+		width: 70%;
 		display: flex;
 		flex-direction: row;
-		justify-content: space-evenly;
+		justify-content: flex-end;
 		
 	}
+
+	.ar-footer-img a {
+		color: white;
+		margin-left: 10%;
+	}
+	
 	.ar-follow p{
 		font-size: 12px;
 		font-weight: 300;

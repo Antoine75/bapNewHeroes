@@ -21,9 +21,8 @@
 			<div class="ar-follow">
 				<p>Suivez-nous</p>
 				<div class="ar-footer-img">
-					<i class="fab fa-instagram"></i>
-					<i class="fab fa-facebook-square"></i>
-					<i class="fab fa-linkedin"></i>
+					<a href="https://www.instagram.com/new_heroes__/?hl=fr"><i class="fab fa-instagram"></i></a>
+					<a href="https://www.facebook.com/New-Heroes-106542074725005"><i class="fab fa-facebook-square"></i></a>
 				</div>
 			</div>
 		</div>

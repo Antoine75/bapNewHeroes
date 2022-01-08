@@ -105,6 +105,14 @@ function redirect(){
 	window.location.href = "http://localhost/NewHeroes/wordpress/connexion/";
 }
 
+
+/* Reglage */
+
+function Appear(){
+	document.getElementById("reglage").classList.toggle("display_block");
+}
+
+
 /* Checkbox */
 
 function GereChkbox() {   
@@ -113,19 +121,19 @@ function GereChkbox() {
 	{   
 	document.getElementById("checkbox2").disabled = "disabled"; 
 	document.getElementById("checkbox3").disabled = "disabled";   
-	document.getElementById("checkbox1").disabled = "";   
+	document.getElementById("checkbox1").disabled = "disabled";   
 	}   
 	else if(document.getElementById("checkbox2").checked)   
 	{   
 	document.getElementById("checkbox1").disabled = "disabled";   
 	document.getElementById("checkbox3").disabled = "disabled";   
-	document.getElementById("checkbox2").disabled = "";   
+	document.getElementById("checkbox2").disabled = "disabled";   
 	}   
 	else if(document.getElementById("checkbox3").checked)   
 	{   
 	document.getElementById("checkbox1").disabled = "disabled";   
 	document.getElementById("checkbox2").disabled = "disabled";   
-	document.getElementById("checkbox3").disabled = "";   
+	document.getElementById("checkbox3").disabled = "disabled";   
 	}   
 	else {   
 	
@@ -170,6 +178,8 @@ function DisableChkbox(){
 		  lab.classList.remove("display_none");
 		}
 }
+
+
 
 /* Filter */
 

@@ -14,11 +14,15 @@
 
 get_header( 'blog' );
 ?>
-
-<main id="primary" class="site-main">
+<main id="primary" class="site-main ar-blog-section">
 	<h2 class="ar-title-section">Nos articles</h2>
 
-<div>
+<div class="ar-filter-img">
+	<img src="https://zupimages.net/up/22/01/hpno.png" alt="" onclick="Appear()">
+</div>
+
+<div id="reglage" class="ar-filter-section">
+	<h2>Trier par Catégorie</h2>
 	<div>
   		<input id="checkbox1" type="checkbox" name="sport" class="ar-check ar-sport-check" onclick="filterFunction1(), GereChkbox()">
   		<label for="sport">Sport</label>
@@ -31,9 +35,10 @@ get_header( 'blog' );
   		<input id="checkbox3" type="checkbox" name="conseil" class="ar-check ar-conseil-check" onclick="filterFunction3(), GereChkbox()">
   		<label for="conseil">Conseil</label>
 	</div>
+	<button onclick="DisableChkbox()">Retirer les filtres</button>
 </div>
 
-	<button onclick="DisableChkbox()">Retirer les filtres</button>
+	
 
 
 	<?php if ( have_posts() ) : ?>
