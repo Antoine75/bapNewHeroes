@@ -192,7 +192,7 @@ function filterFunction1(){
 		div.classList.remove("display_none");
 	  }
 
-	var tem = document.querySelectorAll('.Témoignage'), t;
+	var tem = document.querySelectorAll('.Temoignage'), t;
 
 	for (t = 0; t < tem.length; ++t) {
 	  var section = tem[t].closest('.ar-blog-list');
@@ -219,7 +219,7 @@ function filterFunction2(){
 		div.classList.add("display_none");
 	  }
 
-	var tem = document.querySelectorAll('.Témoignage'), t;
+	var tem = document.querySelectorAll('.Temoignage'), t;
 
 	for (t = 0; t < tem.length; ++t) {
 	  var section = tem[t].closest('.ar-blog-list');
@@ -247,7 +247,7 @@ function filterFunction3(){
 		div.classList.add("display_none");
 	  }
 
-	var tem = document.querySelectorAll('.Témoignage'), t;
+	var tem = document.querySelectorAll('.Temoignage'), t;
 
 	for (t = 0; t < tem.length; ++t) {
 	  var section = tem[t].closest('.ar-blog-list');
