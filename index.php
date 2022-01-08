@@ -18,18 +18,24 @@ get_header( 'blog' );
 <main id="primary" class="site-main">
 	<h2 class="ar-title-section">Nos articles</h2>
 
+<div>
 	<div>
-  		<input type="checkbox" id="sport" name="sport" class="ar-check ar-sport-check" onclick="filterFunction1()">
+  		<input id="checkbox1" type="checkbox" name="sport" class="ar-check ar-sport-check" onclick="filterFunction1(), GereChkbox()">
   		<label for="sport">Sport</label>
 	</div>
 	<div>
-  		<input type="checkbox" id="temoignage" name="temoignage" class="ar-check ar-temoignage-check" onclick="filterFunction2()">
+  		<input id="checkbox2" type="checkbox" name="temoignage" class="ar-check ar-temoignage-check" onclick="filterFunction2(), GereChkbox()">
   		<label for="temoignage">Témoignage</label>
 	</div>
 	<div>
-  		<input type="checkbox" id="conseil" name="conseil" class="ar-check ar-conseil-check" onclick="filterFunction3()">
+  		<input id="checkbox3" type="checkbox" name="conseil" class="ar-check ar-conseil-check" onclick="filterFunction3(), GereChkbox()">
   		<label for="conseil">Conseil</label>
 	</div>
+</div>
+
+	<button onclick="DisableChkbox()">Retirer les filtres</button>
+
+
 	<?php if ( have_posts() ) : ?>
 
 		<header class="page-header">
