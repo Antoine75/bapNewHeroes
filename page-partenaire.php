@@ -5,7 +5,10 @@ Template name: Partenaire
 
 get_header( 'partenaire' );
 ?>
-
+<div class="error">
+    <img src="https://zupimages.net/up/22/01/386o.png">
+    <h2 class="ar-error-msg">Site Desktop en maintenance, Version mobile disponible</h2>
+</div>
 	<main id="primary" class="site-main">
 		<h2 class="ar-title-section">Nos partenaires</h2>
 		<div class="ar-part-grid">

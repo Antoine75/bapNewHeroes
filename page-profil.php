@@ -4,6 +4,10 @@ Template name: Profil
  */
 get_header( 'profil' );
 ?>
+<div class="error">
+    <img src="https://zupimages.net/up/22/01/386o.png">
+    <h2 class="ar-error-msg">Site Desktop en maintenance, Version mobile disponible</h2>
+</div>
 <section class="profil-wrapper">
     <h2 class="profil-text">Mes Informations</h2>
     <?php
