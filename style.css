@@ -35,6 +35,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 body{
 	background-color: #E1F9F4;
 	font-family: 'Poppins', sans-serif;
+	background-image: url(https://zupimages.net/up/22/02/i7ge.png);
 }
 
 @font-face {
@@ -58,7 +59,11 @@ body{
   }
 
   .error{
-	  margin-top: 5%;
+	  background-size: cover;
+	  margin: 5% 20%;
+	  padding: 2%;
+	  border-radius: 15px;
+	  background-color: #E1F9F4;
 	  display: flex;
 	  flex-direction: column;
 	  align-items: center;
@@ -90,6 +95,10 @@ body{
 
 
 @media screen and (max-width: 960px) {
+
+	body{
+		background-image: none;
+	}
 
 	.error{
 		display: none;

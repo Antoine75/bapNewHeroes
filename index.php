@@ -15,7 +15,7 @@
 get_header( 'blog' );
 ?>
 <div class="error">
-    <img src="https://zupimages.net/up/22/01/386o.png">
+    <img src="https://zupimages.net/up/22/02/aczk.png">
     <h2 class="ar-error-msg">Site Desktop en maintenance, Version mobile disponible</h2>
 </div>
 <main id="primary" class="site-main ar-blog-section">
