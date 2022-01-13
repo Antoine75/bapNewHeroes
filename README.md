@@ -1,3 +1,64 @@
+# Plugin used AND Preferences:
+
+## 1 - Image de Menu par  Rui Guerreiro 
+<br>
+
+Assigner toutes les images de la nav bar à la nav bar grace au plugin (depuis Apparence -> Menus)
+
+## 2 - Advanced Custom Fields par Delicious Brains 
+
+<img src="https://zupimages.net/up/22/02/wbk4.png" alt="">
+<br>
+<br>
+
+## 3 - Forminator par WPMU DEV 
+
+<img src="https://zupimages.net/up/22/02/hla2.png" alt="">
+<br>
+<br>
+
+## 4 - LoginWP par LoginWP Team
+
+<img src="https://zupimages.net/up/22/02/5gm5.png" alt="">
+<br>
+<br>
+
+# Preferences for Wordpress, to set up
+
+## Menu set Up
+<img src="https://zupimages.net/up/22/02/8glf.png" alt="">
+<br>
+<br>
+
+## Reglage Généraux
+
+<img src="https://zupimages.net/up/22/02/emb5.png" alt="">
+<br>
+<br>
+
+## Réglage de Lecture 
+
+<img src="https://zupimages.net/up/22/02/9fyz.png" alt="">
+<br>
+<br>
+
+## Réglage de Commentaire
+
+<img src="https://zupimages.net/up/22/02/l1qy.png" alt="">
+<br>
+<br>
+
+# Widgets set up 
+
+<img src="https://zupimages.net/up/22/02/09li.png" alt="">
+<img src="https://zupimages.net/up/22/02/ljju.png" alt="">
+<br>
+<br>
+
+# Fin du Set up 
+<br>
+<br>
+
 [![Build Status](https://travis-ci.org/Automattic/_s.svg?branch=master)](https://travis-ci.org/Automattic/_s)
 
 _s
