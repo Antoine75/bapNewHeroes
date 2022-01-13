@@ -1,3 +1,5 @@
+const { FALSE } = require("node-sass");
+
 /**
  * File navigation.js.
  *
@@ -97,3 +99,168 @@
 		}
 	}
 }() );
+
+
+function redirect(){
+	window.location.href = "http://localhost/NewHeroes/wordpress/connexion/";
+}
+
+
+/* Reglage */
+
+function Appear(){
+	document.getElementById("reglage").classList.toggle("display_block");
+}
+
+
+/* Checkbox */
+
+function GereChkbox() {   
+
+	if(document.getElementById("checkbox1").checked)   
+	{   
+	document.getElementById("checkbox2").disabled = "disabled"; 
+	document.getElementById("checkbox3").disabled = "disabled";   
+	document.getElementById("checkbox1").disabled = "disabled";   
+	}   
+	else if(document.getElementById("checkbox2").checked)   
+	{   
+	document.getElementById("checkbox1").disabled = "disabled";   
+	document.getElementById("checkbox3").disabled = "disabled";   
+	document.getElementById("checkbox2").disabled = "disabled";   
+	}   
+	else if(document.getElementById("checkbox3").checked)   
+	{   
+	document.getElementById("checkbox1").disabled = "disabled";   
+	document.getElementById("checkbox2").disabled = "disabled";   
+	document.getElementById("checkbox3").disabled = "disabled";   
+	}   
+	else {   
+	
+	document.getElementById("checkbox1").disabled = "";   
+	document.getElementById("checkbox2").disabled = ""; 
+	document.getElementById("checkbox3").disabled = "";  
+	}   
+	
+	} 
+
+/* Button retirer les filtres */
+
+function DisableChkbox(){
+	document.getElementById("checkbox1").checked = false;   
+	document.getElementById("checkbox2").checked = false;
+	document.getElementById("checkbox3").checked = false; 
+	document.getElementById("checkbox1").disabled = "";   
+	document.getElementById("checkbox2").disabled = ""; 
+	document.getElementById("checkbox3").disabled = ""; 
+
+	var spo = document.querySelectorAll('.Sport'), i;
+
+	for (i = 0; i < spo.length; ++i) {
+		var div = spo[i].closest('.ar-blog-list');
+		div.classList.remove("display_block");
+		div.classList.remove("display_none");
+	  }
+
+	  var tem = document.querySelectorAll('.Témoignage'), t;
+
+	  for (t = 0; t < tem.length; ++t) {
+		var section = tem[t].closest('.ar-blog-list');
+		section.classList.remove("display_block");
+		section.classList.remove("display_none");
+	  }
+  
+	  var con = document.querySelectorAll('.Conseil'), c;
+  
+	  for (c = 0; c < con.length; ++c) {
+		  var lab = con[c].closest('.ar-blog-list');
+		  lab.classList.remove("display_block");
+		  lab.classList.remove("display_none");
+		}
+}
+
+
+
+/* Filter */
+
+function filterFunction1(){
+	var spo = document.querySelectorAll('.Sport'), i;
+
+	for (i = 0; i < spo.length; ++i) {
+		var div = spo[i].closest('.ar-blog-list');
+		div.classList.add("display_block");
+		div.classList.remove("display_none");
+	  }
+
+	var tem = document.querySelectorAll('.Temoignage'), t;
+
+	for (t = 0; t < tem.length; ++t) {
+	  var section = tem[t].closest('.ar-blog-list');
+	  section.classList.remove("display_block");
+	  section.classList.add("display_none");
+	}
+
+	var con = document.querySelectorAll('.Conseil'), c;
+
+	for (c = 0; c < con.length; ++c) {
+		var lab = con[c].closest('.ar-blog-list');
+		lab.classList.remove("display_block");
+		lab.classList.add("display_none");
+	  }
+
+}
+
+function filterFunction2(){
+	var spo = document.querySelectorAll('.Sport'), i;
+
+	for (i = 0; i < spo.length; ++i) {
+		var div = spo[i].closest('.ar-blog-list');
+		div.classList.remove("display_block");
+		div.classList.add("display_none");
+	  }
+
+	var tem = document.querySelectorAll('.Temoignage'), t;
+
+	for (t = 0; t < tem.length; ++t) {
+	  var section = tem[t].closest('.ar-blog-list');
+	  section.classList.add("display_block");
+	  section.classList.remove("display_none");
+	}
+
+	var con = document.querySelectorAll('.Conseil'), c;
+
+	for (c = 0; c < con.length; ++c) {
+		var lab = con[c].closest('.ar-blog-list');
+		lab.classList.remove("display_block");
+		lab.classList.add("display_none");
+	  }
+		
+
+}
+
+function filterFunction3(){
+	var spo = document.querySelectorAll('.Sport'), i;
+
+	for (i = 0; i < spo.length; ++i) {
+		var div = spo[i].closest('.ar-blog-list');
+		div.classList.remove("display_block");
+		div.classList.add("display_none");
+	  }
+
+	var tem = document.querySelectorAll('.Temoignage'), t;
+
+	for (t = 0; t < tem.length; ++t) {
+	  var section = tem[t].closest('.ar-blog-list');
+	  section.classList.remove("display_block");
+	  section.classList.add("display_none");
+	}
+
+	var con = document.querySelectorAll('.Conseil'), c;
+
+	for (c = 0; c < con.length; ++c) {
+		var lab = con[c].closest('.ar-blog-list');
+		lab.classList.add("display_block");
+		lab.classList.remove("display_none");
+	  }
+}
+
